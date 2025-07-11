@@ -1,0 +1,10 @@
+{
+  "nome": "Wellington",
+  "descricao": "Descrição da conexão",
+  "path": "testes",
+  "nomeBanco": "nome do banco",
+  "porta": "1234",
+  "tipoBanco": "ORACLE",
+  "usuario": "teste",
+  "senha": "teste2"
+}

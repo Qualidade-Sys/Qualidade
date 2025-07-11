@@ -1,0 +1,27 @@
+describe('Login válido', () => {
+  it('Deverá realizar o Login', () => {
+    cy.visit('http://192.169.2.108:3000/login');
+
+    // Preenche as credenciais
+    cy.get('[type="text"]').type('admin');
+    cy.get('[type="password"]').should('be.visible').type('admin');
+
+    // Clica no botão de login
+    cy.get('.space-y-4 > .bg-blue-600').click();
+
+    // Aguarda a renderização do menu lateral
+    cy.get('.w-\\[10\\%\\] > ul', { timeout: 10000 }).should('be.visible');
+
+    // Clica nos itens do menu lateral
+    cy.get('.w-\\[10\\%\\] > ul > :nth-child(1) > a').click();
+    cy.get('.w-\\[10\\%\\] > ul > :nth-child(2) > a').click();
+    cy.get('.w-\\[10\\%\\] > ul > :nth-child(3) > a').click();
+    cy.get('.w-\\[10\\%\\] > ul > :nth-child(4) > a').click();
+    cy.get('.w-\\[10\\%\\] > ul > :nth-child(5) > a').click();
+  });
+});
+
+
+
+
+
