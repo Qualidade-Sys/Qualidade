@@ -16,7 +16,7 @@ Cypress.Commands.add('validarTotalDeItensEsperado', (valorEsperado) => {
  
 Cypress.Commands.add('login', () => {
   cy.visit('/login');
-  cy.get('[type="text"]').type('admin');
+ cy.get('input[name="email"]').type('admin')
   cy.get('[type="password"]').type('admin');
   cy.contains('button', 'Entrar').first().should('be.visible').click();
 });
