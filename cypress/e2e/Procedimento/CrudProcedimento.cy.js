@@ -8,7 +8,7 @@ describe('CRUD de Procedimento com login válido', () => {
   });
 
   beforeEach(() => {
-    cy.visit('http://192.169.2.108:3000/login');
+    cy.visit('http://34.95.188.150/login');
     cy.get('input[name="email"]').type('admin');
     cy.get('[type="password"]').should('be.visible').type('admin');
     cy.contains('button', 'Entrar').should('be.visible').click();

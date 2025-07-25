@@ -11,7 +11,7 @@ module.exports = defineConfig({
     saveAllAttempts: false,
   },
   e2e: {
-    baseUrl: 'http://192.169.2.108:3000/', // 
+    baseUrl: 'http://34.95.188.150/login', // 
     supportFile: 'cypress/support/e2e.js',
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
     projectId: 'cakh1r',

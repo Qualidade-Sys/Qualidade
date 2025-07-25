@@ -1,6 +1,6 @@
 describe('Login válido', () => {
   it('Deverá realizar o Login', () => {
-    cy.visit('http://192.169.2.108:3000/login');
+    cy.visit('http://34.95.188.150/login');
 
     // Preenche as credenciais
     cy.get('input[name="email"]').type('admin');

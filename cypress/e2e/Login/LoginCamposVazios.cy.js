@@ -1,6 +1,6 @@
 describe('Login válido', () => {
   it('Deverá exibir mensagem de campo obrigatório', () => {
-    cy.visit('http://192.169.2.108:3000/login');
+    cy.visit('http://34.95.188.150/login');
 
     cy.get('[type="text"]').should('have.value', '');
 

@@ -20,5 +20,6 @@ describe('Exclusão da conexão "testwes 2"', () => {
     // 
     //  Valida que "testwes 2" foi removida da tabela
     cy.contains('tr', 'nanda testwes 2').should('not.exist');
+    
   });
 });
